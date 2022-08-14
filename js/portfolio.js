@@ -40,7 +40,7 @@
 	});
 	
 	//상단 한글자씩 나오는 기능 (타자치는 효과)
-	const typing = "안녕하세요. \n정 은 혜 의 포트폴리오 입니다."
+	const typing = "멈추지않고 흘러가는 물처럼 \n변화를 두려워하지 않는,\n퍼블리셔 정은혜 입니다."
 	console.log(typing);
 	//$("h1").html( typing[4]  );  "요"
 	let i = 0; 
@@ -50,7 +50,7 @@
 			txt += typing[i];
 			document.getElementById("typing").innerText = txt;
 			i++;
-			setTimeout( type, 150 );
+			setTimeout( type, 100 );
 		}
 	}
 	type();

@@ -1,4 +1,22 @@
 @charset "utf-8";
+.bgbox{
+	position:relative;
+}
+
+.gf{
+	border:1px solid red;
+	display:block;
+	margin:auto;
+	margin-left:42%;
+	padding-top:11.2%;
+	width:18%;
+}
+
+.bgimg{
+	top:0;
+	position:absolute;
+	border:1px solid red;
+}
 
 /*공통*/
 *{margin:0; padding:0; box-sizing:border-box;}
@@ -16,10 +34,10 @@ nav a {margin-left:20pt; color:white; text-shadow:0 0 10px black;}
 nav a:hover, a.active {color:#00aeff;}
 
 /*헤더*/
-#top {height:100vh; background:url("../images/bg.jpg") no-repeat fixed center top / cover;}
-#typing{padding:40vh 1px 0 1px; color:white; text-align:center; line-height:160%; font-size:2.5rem; height:60vh; text-shadow:0 1px 10px black;}
-#scroll {max-width:100px; margin:auto; margin-top:30vh; text-align:center;}
-#top i {font-size:2.5rem; color:white; display:block; animation:down 1s infinite both;}
+#top { border:1px solid red; width:100%; position:absolute; top:0; height:100vh; /*background:url("../images/bg.png") no-repeat fixed center top / cover;*/}
+#typing{border:1px solid blue; margin-top:37vw;color:white; text-align:center; line-height:200%; font-size:1.8rem; text-shadow:0 1px 10px black;}
+#scroll {max-width:100px; margin:auto; text-align:center; border:1px solid red; margin-top:30px;}
+#top i {font-size:2rem; color:white; display:block; animation:down 1s infinite both;}
 @keyframes down{
 	from 	{transform:translateY(-10pt); opacity:1;}
 	to 		{transform:translateY(0); opacity:0;}
@@ -32,7 +50,8 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt;}
 
 
 /*About*/
-#about {background:#eee;}
+.bbtom{padding-bottom:3%; border-bottom:3px solid #333;}
+#about {margin-top:28%;}
 #about img {width:250pt; margin:0pt auto; }
 #about> p {max-width:150pt; margin:auto; text-align:center;}
 #about  q {font-weight:bold; font-size:1.2rem; line-height:200%;}
@@ -46,7 +65,8 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt;}
 
 
 /*Portfolio*/
-#portfolio {max-width:1000pt;margin:auto; overflow:hidden;}
+.bod{padding-bottom:3%; border-bottom:3px solid #333;}
+#portfolio {max-width:1000pt;margin:auto; overflow:hidden; margin-top:5%;}
 #portfolio> section {display:flex;}
 #leeum {padding:10vh 0 18vh 0; }
 
@@ -114,7 +134,8 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt;}
 	h2 {font-size:2.2rem;}
 	.area {/*padding-top:11vh;*/} 
 	#top {background-size:auto 100vh;}
-	#typing {font-size:2rem;}	
+	#typing {font-size:1rem;}	
+	#top i{font-size:1rem;}
 	
 	nav {padding:10pt 5pt 5pt 5pt;}
 	nav> div {display:block; }
